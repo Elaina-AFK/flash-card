@@ -1,9 +1,15 @@
-import Image from "next/image";
+import CardHolder from "./components/CardHolder";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-green-500">
-      <div> จอห์น สนมิธ หัวขวย </div>
+    <main className="grid h-screen grid-rows-7 place-items-center bg-black ">
+      <h1 className="row-start-1 row-end-2 text-2xl font-bold">
+        Flashcards Project!
+      </h1>
+      <CardHolder />
+      <h2 className="row-start-7 row-end-8 mx-auto place-self-start">
+        Hover the card for answer!
+      </h2>
     </main>
   );
 }
